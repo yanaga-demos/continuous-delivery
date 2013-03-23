@@ -2,7 +2,9 @@ package br.com.yanaga.web;
 
 import java.io.Serializable;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.context.FacesContext;
 
 import br.com.yanaga.Pessoa;
 
@@ -14,7 +16,7 @@ public class PessoaController implements Serializable {
 	private Pessoa pessoa = new Pessoa();
 
 	public void salvar() {
-		throw new IllegalArgumentException("Ih, errei 1...");
+		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Salvei!"));
 	}
 
 	public Pessoa getPessoa() {
