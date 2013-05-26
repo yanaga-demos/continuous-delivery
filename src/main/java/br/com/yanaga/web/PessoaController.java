@@ -14,7 +14,7 @@ public class PessoaController implements Serializable {
 	private Pessoa pessoa = new Pessoa();
 
 	public void salvar() {
-		throw new IllegalArgumentException("Ih, errei 1...");
+		throw new IllegalArgumentException("Ih, errei...");
 	}
 
 	public Pessoa getPessoa() {
